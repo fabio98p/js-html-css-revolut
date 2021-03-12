@@ -4,3 +4,62 @@ body{
 	box-sizing: border-box;
 	background-color: rgb(121, 121, 121);
 }
+/* #region a */
+/* #endregion */
+/* #region a */
+#navbar a{
+	color: lightgray;
+	text-decoration: none;
+	font-size: 20px;
+}
+#navbar a.active{
+	color: black;
+	font-weight: bold;
+}
+#navbar a:hover{
+	color: black;
+}
+/* #endregion */
+
+#navbar{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 40px 0;
+}
+#navbar .navbar-left, #navbar .navbar-right{
+	display: flex;
+	align-items: center;
+}
+/* #region navbar left */
+#navbar .navbar-left > *{
+	margin-left: 80px;
+}
+#navbar .navbar-left img{
+	height: 25px;
+}
+/* #endregion */
+/* #region navbar right */
+#navbar .navbar-right > *{
+	margin-right: 80px;
+}
+#navbar .navbar-right div > div{
+	display: none;
+}
+#navbar .navbar-right div > div.active{
+	display: flex;
+}
+/* #endregion */
+
+/* #region features-menu */
+.navbar-right .features-menu{
+	height: 300px;
+	width: 600px;
+	background-color: white;
+	border-radius: 20px;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+
+/* #endregion */
