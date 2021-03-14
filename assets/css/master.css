@@ -31,6 +31,9 @@ body{
 	display: flex;
 	align-items: center;
 }
+#navbar .navbar-right a{
+	padding-bottom: 30px;
+}
 /* #region navbar left */
 #navbar .navbar-left > *{
 	margin-left: 80px;
@@ -67,19 +70,16 @@ body{
 	right: 350px;
 }
 /* #endregion */
-
 /* #region plans-menu */
 .navbar-right .plans-menu{
 	right: 570px;
 }
 /* #endregion */
-
 /* #region about-us */
 .navbar-right .about-us-menu{
 	right: 400px;
 }
 /* #endregion */
-
 /* #region help */
 .navbar-right .help-menu{
 	right: 300px;
@@ -107,10 +107,12 @@ body{
 	padding: 7px;
 	margin-right: 10px;
 	font-size: 15px;
+	
 }
 .hidden-menu li span{
 	color: lightgray;
 	font-weight: bold;
-	font-size: 18px;
+	font-size: 15px;
+	text-transform: uppercase;
 }
 /* #endregion */
