@@ -2,7 +2,6 @@ body{
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
-	background-color: rgb(121, 121, 121);
 }
 /* #region a */
 /* #endregion */
@@ -52,12 +51,35 @@ body{
 #navbar .navbar-right .hidden-menu.active{
 	display: flex;
 }
+#navbar .navbar-right .btn-black{
+	padding: 10px 20px;
+	color: white;
+	background-color: black;
+	border-radius: 10px;
+	border: none;
+	transition: all 0.2s;
+}
+#navbar .navbar-right .btn-black:hover{
+	background-color: rgb(43, 43, 43);
+}
+#navbar .navbar-right .btn-grey{
+	padding: 10px 20px;
+	color: white;
+	background-color: rgb(197, 197, 197);
+	border-radius: 10px;
+	border: none;
+	transition: all 0.2s;
+}
+#navbar .navbar-right .btn-grey:hover{
+	background-color: rgb(212, 212, 212);
+}
 /* #endregion */
 
 /* #region hidden-menu */
 .hidden-menu{
 	background-color: white;
 	border-radius: 10px;
+	box-shadow: 1px 1px 1px 1px #888888;
 
 	display: flex;
 	justify-content: space-around;
@@ -114,5 +136,15 @@ body{
 	font-weight: bold;
 	font-size: 15px;
 	text-transform: uppercase;
+}
+.hidden-menu li .coming-soon{
+	position: relative;
+	font-size: 10px;
+	color: blue;
+	top: -1rem;
+	left: -1rem;
+}
+.hidden-menu li div{
+	color: rgb(207, 207, 207);
 }
 /* #endregion */
