@@ -43,23 +43,74 @@ body{
 #navbar .navbar-right > *{
 	margin-right: 80px;
 }
-#navbar .navbar-right div > div{
+#navbar .navbar-right .hidden-menu{
 	display: none;
 }
-#navbar .navbar-right div > div.active{
+#navbar .navbar-right .hidden-menu.active{
 	display: flex;
 }
 /* #endregion */
 
-/* #region features-menu */
-.navbar-right .features-menu{
-	height: 300px;
-	width: 600px;
+/* #region hidden-menu */
+.hidden-menu{
 	background-color: white;
-	border-radius: 20px;
+	border-radius: 10px;
+
 	display: flex;
 	justify-content: space-around;
+
+	position: absolute;
+	top: 90px;
+}
+/* #region features-menu */
+.navbar-right .features-menu{
+	right: 350px;
+}
+/* #endregion */
+
+/* #region plans-menu */
+.navbar-right .plans-menu{
+	right: 570px;
+}
+/* #endregion */
+
+/* #region about-us */
+.navbar-right .about-us-menu{
+	right: 400px;
+}
+/* #endregion */
+
+/* #region help */
+.navbar-right .help-menu{
+	right: 300px;
+}
+/* #endregion */
+.hidden-menu ul{
+	font-size: 20px;
+	color: grey;
+	margin: 5px 35px;
+	list-style-type: none;
+	padding: 0;
+}
+.hidden-menu li{
+	font-size: 20px;
+	color: grey;
+	margin: 25px 0;
+	
+	display: flex;
 	align-items: center;
 }
-
+.hidden-menu li i{
+	background-color: lightgray;
+	color: #fff;
+	border-radius: 50%;
+	padding: 7px;
+	margin-right: 10px;
+	font-size: 15px;
+}
+.hidden-menu li span{
+	color: lightgray;
+	font-weight: bold;
+	font-size: 18px;
+}
 /* #endregion */
